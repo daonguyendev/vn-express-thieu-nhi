@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VN Express</title>
+    <style>
+      #container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        border: 1px solid black;
+        height: 100vh;
+      }
+
+      #topNav {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .left-top-nav {
+        width: 40%;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .logo {
+        width: 33%;
+      }
+
+      .location-weather {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .right-top-nav {
+        width: 40%;
+        border: 1px solid black;
+      }
+
+      .center-top-nav {
+        width: 20%;
+        border: 1px solid black;
+      }
+
+      #menu {
+        border: 1px solid green;
+      }
+
+      main {
+        border: 1px solid blue;
+        height: 300px;
+      }
+
+      footer {
+        border: 1px solid purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="topNav">
+        <div class="left-top-nav">
+          <img
+            class="logo"
+            src="https://s1.vnecdn.net/vnexpress/restruct/i/v879/v2_2019/pc/graphics/logo.svg"
+          />
+          <div class="time">Thứ hai, 22/4/2024</div>
+          <div class="location-weather">
+            <select name="location" id="location">
+              <option value="volvo">TP HCM</option>
+              <option value="saab">Hà Nội</option>
+              <option value="opel">Đà Nẵng</option>
+              <option value="audi">Cần Thơ</option>
+            </select>
+            <div class="weather">33<sup>o</sup></div>
+          </div>
+        </div>
+        <div class="center-top-nav">Center Top Nav</div>
+        <div class="right-top-nav">Right Top Nav</div>
+      </div>
+      <div id="menu">Menu</div>
+      <main>Main</main>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
